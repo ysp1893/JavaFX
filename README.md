@@ -72,11 +72,11 @@ public class Main extends Application {
    - The main() method is not required for JavaFX applications when the JAR file for the application is created with the JavaFX Packager tool, which embeds the JavaFX Launcher in the JAR file.
    - However, it is useful to include the main() method so you can run JAR files that were created without the JavaFX Launcher, such as when using an IDE in which the JavaFX tools are not fully integrated. Also, Swing applications that embed JavaFX code require the main() method.
 
-First Project link: [FirstJavaFXProject!](https://github.com/ysp1893/JavaFX/tree/main/FirstJavaFXProject)
+First Project link: https://github.com/ysp1893/JavaFX/tree/main/FirstJavaFXProject
 
 # Understanding the JavaFX Architecture
 
-![Image of JavaFX Architect](https://raw.githubusercontent.com/ysp1893/Images-Required/master/JavaFxArchitecture.png?token=ALAFXARL7Z7H5DYNPWQVTA3AAFRW6)
+![Image of JavaFX Architect](https://github.com/ysp1893/Images-Required/blob/master/JavaFxArchitecture.png?raw=true)
 
 ## Scene Graph:
 It is the starting point for constructing a JavaFX application. It is a hierarchical tree of nodes that represents all of the visual elements of the application's user interface. It can handle input and can be rendered. A single element in a scene graph is called a node. Each node has an ID, style class, and bounding volume. With the exception of the root node of a scene graph, each node in a scene graph has a single parent and zero or more children. It can also have the Effects, such as blurs and shadows, opacity, transform, Event handlers (such as mouse, key and input method), etc.
