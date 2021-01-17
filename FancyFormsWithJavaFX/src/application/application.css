@@ -1,0 +1,53 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/*
+ * JavaFX uses -fx-property to apply style
+ * Ex: -fx-background-image, -fx-font-size, -fx-font-weight
+ */
+
+/*
+ * The background image is applied to the .root style, 
+ * which means it is applied to the root node of the Scene instance. 
+ * The style definition consists of the name of the property (-fx-background-image) 
+ * and the value for the property (url(”background.jpg”)).
+ */
+ 
+.root {
+	-fx-background-image: url("background.jpg")
+}
+
+/*
+ * This example increases the font size and weight and applies a drop shadow of a gray color (#333333). 
+ * The purpose of the drop shadow is to add contrast between the dark gray text and the light gray background.
+ */
+.label{
+	-fx-font-size: 12px;
+	-fx-font-weight: bolder;
+	-fx-text-fill: #333333;
+	-fx-effect: dropshadow( gaussian, rgba(255,255,255,0.1), 0, 0, 0, 1) ;
+} 
+
+#Welcome-title{
+   -fx-font-size: 32px;
+   -fx-font-family: "Arial Black";
+   -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#actionTarget{
+  -fx-fill: FIREBRICK;
+  -fx-font-weight: bold;
+  -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
